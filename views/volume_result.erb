@@ -1,0 +1,10 @@
+<% if @volume_result %>
+<h1>the result is <%= @volume_result %></h1>
+<% end %>
+<p>Type in cube or sphere to find the volume of of a cube or sphere. Only use this page if you want to find the volume of a cube or a sphere. Cube. Sphere.</p>
+
+<form method="get" action="/volume_calculate">
+  <input type="number" name="number" placeholder="number" step="0.01" value="<%= @number %>">
+  <input type="text" name="vol_op" placeholder="cube or sphere?">
+  <button>CALCULATE</button>
+</form>
